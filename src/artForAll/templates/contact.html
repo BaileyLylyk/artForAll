@@ -1,0 +1,85 @@
+{%  extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<br>
+
+<div class="container">
+  <div class = "row">
+    <div class ="col">
+      <!-- Card 1 -->
+      <br>
+      <div class="card" style="width: 25rem;">
+        <div class="card-body">
+          <h5 class="card-title">Shelley Winnet</h5>
+          <p class="card-text">Tutor and Facilitator of Art for All</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Email: artforallgroup@outlook.com </li>
+          <li class="list-group-item">Phone: (+44) 7923 413 607 </li>
+        </ul>
+      </div>
+      <br><br>
+
+      <hr/>
+      
+      <!-- Card 2 -->
+      <br>
+      <div class="card" style="width: 25rem;">
+        <div class="card-body">
+          <h5 class="card-title">The Independence Trust</h5>
+          <p class="card-text">The Independence Trust are a charity which supports both mental and physical growth in local communities.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Email: info@independencetrust.co.uk</li>
+          <li class="list-group-item">Phone: 01242 512812</li>
+        </ul>
+      </div>
+      <br><br>
+      <hr/>
+
+
+      <!-- Card 3 -->
+      <br>
+      <div class="card" style="width: 25rem;">
+        <div class="card-body">
+          <h5 class="card-title">Instagram</h5>
+          <p class="card-text">Check out some of our members' artworks, and message us to find out more.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Find us at @artforallgroup </li>
+        </ul>
+      </div>
+      <br><br>
+
+    </div>
+
+    <!-- Second Column -->
+    <div class = "col">
+ 
+      <!-- <h1>Where you can find us</h1>
+      <p style="font-size: 19;">Art for all is hosted from the gas green community centre in Cheltenham which you can find here:</p> -->
+      <br>
+      <h1>Where you can find us</h1>
+      <p style="font-size: 19;">Art for all is hosted from the gas green community centre in Cheltenham which you can find here:</p>
+
+      <ul>
+        <li>Gas Green Baptist Church</li>
+        <li>6 Baker St, Cheltenham </li>
+        <li>GL51 9HQ</li>
+      </ul>
+
+  
+      <br><br>
+      <img src="{% static '/img/gasGreenOutside.jpg' %}"style="width:50rem;" >
+
+    </div>
+
+
+  </div>
+</div>
+<br>
+<hr/>
+<br><br>
+
+{% endblock %}

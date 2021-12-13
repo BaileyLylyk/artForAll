@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%  block content %}
+<h1> Gallery</h1>
+<p> A selection of the art created by the members of Art for All.</p>
+<div class="row">
+  <div class ="col">
+      {% for object in objects %}
+          <div class="card" >
+            <div class ="card-title" style = "padding: 10px; font-size: large; background-color: black; color:white"><h5>{{object.title}}</h5></div>      
+            {% if object.image %}
+              <img style="width: 25rem; object-fit: contain; padding-left: 20px ;"src ="{{ object.image.url }}">
+            {% else %}
+            
+            {% endif %}
+
+            <div class = "card-body" style ="padding: 10px"><p>{{object.description}}</p></div>
+
+            <div class= "card-text" style ="padding-top: 10px; padding-left:10px"><p>By {{object.artist}}</p></div>
+            
+          </div>
+          <hr/>
+            {% empty %}
+              <p>No objects found</p>
+            {% endfor %}
+  </div>
+
+
+  <div class="col">
+
+    <h1> About the Gallery</h1>
+    <hr>
+
+    <!-- Card 1 -->
+    <div class="card" style ="width: 18rem;">
+    <div class="card-title" style ="padding:20px; padding-bottom: 0px;"><h5> What is the gallery?</h5></div>
+    <div class="card-body" style="padding-top: 0;"><p>This gallery was made to show off some of our members projects and artwork, and to show what Art for All is all about.</p></div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Card 1 -->
+    <div class="card" style ="width: 18rem;">
+    <div class="card-title" style ="padding:20px; padding-bottom: 0px;"><h5> How is art chosen for the gallery?</h5></div>
+    <div class="card-body" style="padding-top: 0;"><p>All of the art chosen for this gallery is picked at random, and only with the artists permission.</p></div>
+    </div>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Card 1 -->
+    <div class="card" style ="width: 18rem;">
+    <div class="card-title" style ="padding:20px; padding-bottom: 0px;"><h5> How long will an art piece stay here for?</h5></div>
+    <div class="card-body" style="padding-top: 0;"><p>Art pieces will remain on this site indefinitely, but can always be removed on request by the artist.</p></div>
+    </div>
+
+    
+    <br>
+    <hr>
+    <br>
+
+  
+</div>
+
+
+{% endblock %}
+
