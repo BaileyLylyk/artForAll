@@ -1,3 +1,4 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 {% url 'home' as home %}
 {% url 'gallery' as gallery %}
 {% url 'about' as about %}
@@ -6,9 +7,9 @@
 {% load static %}
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; top:0; z-index:1; font-size: large;">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'home' %}">
-            <img src="{% static 'img/logo.jpg' %}" alt="logo" width="" height="100rem;" class="d-inline-block align-text-top" href = "{% url 'home' %}"> 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <!-- <a class="navbar-brand" href="{% url 'home' %}"> -->
+      <img src="{% static 'img/logo.jpg' %}" alt="logo" width="" height="100rem;" class="d-inline-block align-text-top href = "{% url 'home' %}"> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id ="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
