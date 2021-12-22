@@ -6,4 +6,6 @@ class GalleryPost(models.Model):
     description = models.TextField(blank =True, null=True)
     artist      = models.CharField(max_length=120)
     featured    = models.BooleanField(default= False)
-    image       = models.ImageField(null = True, blank = True, upload_to = "static/img/")
+    image       = models.ImageField(null = True, blank = True, upload_to = "static/")
+# image       = models.ImageField(null = True, blank = True, upload_to = "static/img/")
+

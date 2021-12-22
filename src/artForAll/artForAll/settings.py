@@ -30,7 +30,7 @@ SECRET_KEY = config['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['artforallgroup.co.uk','178.79.161.39']
+ALLOWED_HOSTS = ['www.artforallgroup.co.uk','178.79.161.39']
 
 
 # Application definition
