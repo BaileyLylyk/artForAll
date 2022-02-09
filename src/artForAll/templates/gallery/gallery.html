@@ -6,7 +6,7 @@
 <p> A selection of the art created by the members of Art for All.</p>
 <div class="row">
   <div class ="col">
-      {% for object in objects %}
+      {% for object in objects reversed %}
           <div class="card" >
             <div class ="card-title" style = "padding: 10px; font-size: large; background-color: black; color:white"><h5>{{object.title}}</h5></div>      
             {% if object.image %}
