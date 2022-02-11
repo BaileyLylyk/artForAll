@@ -14,7 +14,7 @@ href = "{% static 'artForAll/css/bootstrap.css' %}"
 <!-- Required meta tags for BootStrap scaling -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- end -->
+<!-- End -->
 
 <link rel="shortcut icon" type ="image/x-icon" href=="{% static 'favicon.ico' %}"/> 
 {% include 'navbar.html'%}
