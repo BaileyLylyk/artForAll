@@ -2,23 +2,31 @@
 {% load static %}
 
 {%  block content %}
+<style>
+  .galleryImg{
+    margin:20px;
+    display:inline-block;
+    opacity:0.6;
+    border-radius:15px;
+    width:300px;
+    height:300px;
+  }
+
+
+</style>
+
 <h1> Gallery</h1>
 <p> A selection of the art created by the members of Art for All.</p>
 <div class="row">
   <div class ="col">
       {% for object in objects reversed %}
-          <div class="card" >
-            <div class ="card-title" style = "padding: 10px; font-size: large; background-color: black; color:white"><h5>{{object.title}}</h5></div>      
+ 
             {% if object.image %}
-              <img style="width: 25rem; object-fit: contain; padding-left: 20px ;"src ="{{ object.image.url }}">
+              <img class="galleryImg" style="width: 20rem; object-fit: contain; padding: 20px ;"src ="{{ object.image.url }}">
             {% else %}
             
             {% endif %}
 
-            <div class = "card-body" style ="padding: 10px"><p>{{object.description}}</p></div>
-
-            <div class= "card-text" style ="padding-top: 10px; padding-left:10px"><p>By {{object.artist}}</p></div>
-            
           </div>
           <hr/>
             {% empty %}
